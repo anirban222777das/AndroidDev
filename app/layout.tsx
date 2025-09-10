@@ -23,7 +23,14 @@ export const metadata: Metadata = {
   generator: "Next.js",
   icons: {
     icon: "/favicon.ico",
+    apple: "/placeholder-logo.png",
   },
+}
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 }
 
 export default function RootLayout({

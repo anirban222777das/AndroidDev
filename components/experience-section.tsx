@@ -49,15 +49,15 @@ export function ExperienceSection() {
 
           <div className="space-y-16">
             {experience.list.map((exp, index) => (
-              <Card
-                key={index}
-                className="ml-24 p-10 rounded-[2rem] shadow-brutal border-4 border-foreground bg-card hover:bg-background transition-all duration-500 relative overflow-hidden group hover:-translate-y-2 neo-hover"
-                onMouseEnter={() => setHoveredExp(index)}
-                onMouseLeave={() => setHoveredExp(null)}
-                style={{
-                  animationDelay: `${index * 0.2}s`,
-                }}
-              >
+          <Card
+            key={index}
+            className="ml-24 md:ml-0 p-10 rounded-[2rem] shadow-brutal border-4 border-foreground bg-card hover:bg-background transition-all duration-500 relative overflow-hidden group hover:-translate-y-2 neo-hover"
+            onMouseEnter={() => setHoveredExp(index)}
+            onMouseLeave={() => setHoveredExp(null)}
+            style={{
+              animationDelay: `${index * 0.2}s`,
+            }}
+          >
                 <div className="absolute -left-[6.5rem] top-12 w-8 h-8 bg-primary rounded-[2rem] border-4 border-foreground shadow-brutal group-hover:scale-125 transition-transform duration-500" />
 
                 <div className="absolute inset-0 bg-muted/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[2rem]" />
